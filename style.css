@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;600&display=swap');
+:root{
+    /*COLORS*/
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-magenta:hsl(300, 69%, 71%);
+    --White: hsl(0, 0%, 95%);;
+
+    /*FONTS*/
+    --Ff-open-sans: "Open Sans", sans-serif;
+    --Ff-poppins: "Poppins", sans-serif;
+    --Fw-400: 400;
+    --Fw-600: 600;
+    --fs-400: 1rem;
+    --fs-600: 2.2rem;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--Ff-open-sans);
+    font-size: var(--fs-400);
+    font-weight: var(--Fw-400);
+    color: var(--White);
+    padding: 1rem 2rem;
+    line-height: 1.5;
+}
+
+.logo{
+    margin-top: 2rem;
+    width: 15rem;
+}
+
+main{
+    padding: 3rem 0;
+}
+
+.page{
+    width: 100%;
+    margin: auto;
+}
+
+.info{
+    text-align: center;
+}
+
+
+h1{
+    font-family: var(--Ff-poppins);
+    font-weight: var(--Fw-600);
+    font-size: var(--fs-600);
+}
+
+p{
+    margin: 1.5rem 0 2rem 0;
+}
+
+.register-btn{
+    background-color: var(--White);
+    color: var(--Violet);
+    padding: .6rem 3rem;
+    border-radius: 8rem;
+    text-decoration: none;
+    margin: 2rem;
+    box-shadow: 0 5px 10px hsla(0, 0, 0, 0.4);
+}
+
+.smedialinks{
+    text-align: end;
+}
+
+.smedialinks i{
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: end;
+}
+
+.hover:hover{
+    background-color: var(--Soft-magenta);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.smedialinks i:hover{
+    border-color: var(--Soft-magenta);
+    color: var(--Soft-magenta);
+}
+
+@media (min-width: 800px) {
+    body{
+        background-image: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .info{
+        text-align: left;
+    }
+}
